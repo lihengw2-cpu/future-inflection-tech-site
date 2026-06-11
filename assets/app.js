@@ -33,31 +33,26 @@
 
   if (bookingForm && formResult) {
     bookingForm.addEventListener('submit', (event) => {
-      event.preventDefault();
       const data = new FormData(bookingForm);
       const name = String(data.get('name') || '').trim();
       const phone = String(data.get('phone') || '').trim();
 
       if (!/^1[3-9]\d{9}$/.test(phone)) {
+        event.preventDefault();
         formResult.textContent = '请填写有效的 11 位手机号。';
         formResult.classList.add('visible');
         return;
       }
 
-      const payload = {
-        name,
-        phone,
-        product: data.get('product'),
-        service: data.get('service'),
-        pain: data.get('pain'),
-        createdAt: new Date().toISOString()
-      };
+      if (!name) {
+        event.preventDefault();
+        formResult.textContent = '请填写姓名，方便我们联系和记录预约。';
+        formResult.classList.add('visible');
+        return;
+      }
 
-      localStorage.setItem('latestBookingRequest', JSON.stringify(payload));
-      formResult.textContent = `${name || '您好'}，预约信息已在本地记录。正式上线时可以接入 EmailJS、企业微信、飞书或后端接口，我们将在 1 个工作日内联系您。`;
+      formResult.textContent = '正在提交预约信息，请稍候...';
       formResult.classList.add('visible');
-      bookingForm.reset();
-      if (quickPhone) quickPhone.value = '';
     });
   }
 })();
