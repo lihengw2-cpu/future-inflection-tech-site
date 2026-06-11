@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://example.com/</loc>
+    <loc>https://lihengw2-cpu.github.io/future-inflection-tech-site/</loc>
     <lastmod>2026-06-11</lastmod>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://example.com/services</loc>
+    <loc>https://lihengw2-cpu.github.io/future-inflection-tech-site/services</loc>
     <lastmod>2026-06-11</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://example.com/about</loc>
+    <loc>https://lihengw2-cpu.github.io/future-inflection-tech-site/about</loc>
     <lastmod>2026-06-11</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://example.com/booking</loc>
+    <loc>https://lihengw2-cpu.github.io/future-inflection-tech-site/booking</loc>
     <lastmod>2026-06-11</lastmod>
     <priority>0.9</priority>
   </url>
