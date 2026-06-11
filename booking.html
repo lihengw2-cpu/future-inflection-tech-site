@@ -67,9 +67,13 @@
           </div>
         </div>
 
-        <form class="form-panel" id="booking-form">
+        <form class="form-panel" id="booking-form" action="https://formsubmit.co/lihengw2@gmail.com" method="POST">
           <h3>完善预约信息</h3>
-          <p class="muted">信息仅用于本次咨询联系。正式上线时可接入邮箱、企业微信、飞书或后端接口。</p>
+          <p class="muted">信息仅用于本次咨询联系。提交后会通过邮件发送给我们，请保持手机畅通。</p>
+          <input type="hidden" name="_subject" value="网站预约咨询 - 未来折点科技">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_next" value="https://lihengw2-cpu.github.io/future-inflection-tech-site/booking.html?submitted=1">
           <div class="field">
             <label for="name">姓名</label>
             <input id="name" name="name" type="text" placeholder="请输入姓名">
