@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://example.com/sitemap.xml
+Sitemap: https://lihengw2-cpu.github.io/future-inflection-tech-site/sitemap.xml
